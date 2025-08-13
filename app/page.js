@@ -14,7 +14,7 @@ export default function Home() {
     }
     setError("");
     try {
-   const res = await fetch(`https://my-weather-api.onrender.com/weather?city=${city}`);
+   const res = await fetch(`https://weather-app-backend-depa.onrender.com/weather?city=${city}`);
 
       const data = await res.json();
       if (res.ok) {
