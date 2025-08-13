@@ -14,7 +14,8 @@ export default function Home() {
     }
     setError("");
     try {
-      const res = await fetch(`process.env.https://weather-app-backend-0zvr.onrender.com/weather?city=${city}`);
+     const res = await fetch(`http://localhost:5000/weather?city=${city}`);
+
       const data = await res.json();
       if (res.ok) {
         setWeather(data);
